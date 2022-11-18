@@ -23,6 +23,30 @@ This library developed for Autodesk Maya generates 3D ocular models using MRI da
 
 ![image](https://user-images.githubusercontent.com/46249629/202595745-9d19138e-444a-40c4-baf7-8a1a045c8907.png)
 
+## Usage
+
+1. In Maya, open a script editor window using: Windows -> General Editors -> Script Editor. 
+
+2. Click the "+" icon in the center of the window to create a new Script. Make sure to select "Python" as the language. 
+
+3. In the Python script, paste the following code snippet:
+
+```Python
+import registration_utils
+
+# Generate Eye
+folder_path = r"C:\Users\admin\Dropbox\Maya Model Generator\9 SOP Datasets\Q9 Anonymized Stacks"
+muscles = registration_utils.generateEye(folder_path)
+```
+
+4. Modify the "folder_path" variable to be the full path to the parent directory of all image planes / stacks (see expected inputs section). Once done, click the "Execute" button on the toolbar to execute the script. This may take some time to run. Once successfully completed, you should see several statistics printed in the console window and a model generated in the scene.
+
+![image](https://user-images.githubusercontent.com/46249629/202597526-77ddbe73-aa66-4d1f-8c43-272004714f52.png)
+
+5. Check the scene in Maya to ensure all components were properly generated. The eye models will be in the groups "OS" and "OD". All other items are not necessary. You may need to unhide the eye models for them to appear.
+
+6. Once satisfied with the generated features, create a new Python script with the following code snippet to export 
+
 
 
 
