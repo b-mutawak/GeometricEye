@@ -69,7 +69,7 @@ export(muscles, out_file_path)
   * Coronal OS Prim
   * Sagittal Os Prim
 * Each folder must contain exported ROI points (from ImageJ or Fiji) of the seven relevant features (Eyeball, IO, IR, LR, MR, SO, Socket, SR) in the following naming convention (**Case and Spelling sensitive!!!!**)
-  * [Coronal/Sagittal]_[OS/OD]_Prim_[Feature].zip
+  * [Coronal/Sagittal]_[OS/OD]\_Prim\_[Feature].zip
   * For example, each of the following files would be in the "Coronal OD Prim" folder:
     * Sagittal_OD_Prim_Eyeball.zip
     * Sagittal_OD_Prim_Socket.zip
