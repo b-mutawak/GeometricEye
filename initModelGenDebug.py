@@ -30,14 +30,14 @@ def initializePlugin(mobject):
         sys.stderr.write("Failed to register command: %s\n" % kPluginCmdName)
         raise
 		
-    path = "C:/Users/admin/Dropbox/Maya Model Generator/Project/Maya_New/Maya2020/bin/plug-ins/Model_Generator"
+    path = "C:/Users/admin/Dropbox/Maya Model Generator/Project/Maya_New/Maya2020/bin/plug-ins/GeometricEye"
     if (path not in sys.path):
         upath = eval("u'"+path+"'")
         sys.path.append(upath)
         sys.stderr.write("Added Path\n")
 	   
     for file in [file for file in os.listdir(path) if file.endswith(".py")]:
-        mel.eval('source /Model_Generator/"' + file + '"')
+        mel.eval('source /GeometricEye/"' + file + '"')
 		
 		
 # Uninitialize the script plug-in
