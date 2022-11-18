@@ -45,7 +45,21 @@ muscles = registration_utils.generateEye(folder_path)
 
 5. Check the scene in Maya to ensure all components were properly generated. The eye models will be in the groups "OS" and "OD". All other items are not necessary. You may need to unhide the eye models for them to appear.
 
-6. Once satisfied with the generated features, create a new Python script with the following code snippet to export 
+6. Once satisfied with the generated features, create a new Python script with the following code snippet to export the models to a JSON file.
+
+```Python
+from shape_utils import export
+
+# Export
+out_file_path = r"C:\Users\admin\Desktop\Masters Thesis\exported_model.json"
+export(muscles, out_file_path)
+```
+
+7. Edit the "out_file_path" variable to be the output path of your desired file. Make sure to add the ".json" extension.
+  
+8. Execute the script. You should now see the output json with all embedded features at the desired location.
+  
+ 
 
 
 
