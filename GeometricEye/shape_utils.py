@@ -1822,7 +1822,7 @@ def getCurvePoints(curve):
     return points
 
         
-def export(muscles):
+def export(muscles, out_file_path="./exported_data.json"):
     """
     Generates a json to house the whole scene.
     """
@@ -2084,7 +2084,7 @@ def export(muscles):
 
         
     # Export
-    with open('C:/Users/admin/Dropbox/Maya Model Generator/Project/Maya_New/Maya2020/bin/plug-ins/Model_Generator/exported_data.json', 'w') as out_file:
+    with open(out_file_path, 'w') as out_file:
         json.dump(data, out_file)
     
 def getComponentIndexList(componentList=[]):
