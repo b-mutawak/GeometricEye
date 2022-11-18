@@ -59,6 +59,16 @@ export(muscles, out_file_path)
   
 8. Execute the script. You should now see the output json with all embedded features at the desired location.
   
+
+## Expected Inputs
+  
+**Image Data**
+* This plug-in expects traced sequences of MRI images as the input features. The folder path supplied to the plug-in must contain the following folders (**Case and Spelling sensitive!!!!**):
+  * Coronal OD Prim
+  * Sagittal OD Prim
+  * Coronal OS Prim
+  * Sagittal Os Prim
+  
  
 
 
