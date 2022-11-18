@@ -15,6 +15,8 @@ This library developed for Autodesk Maya generates 3D ocular models using MRI da
   
 * Once completed, you should see scipy (v0.19.1) and numpy (v1.13.1) installed in the mayapy interpretor. You can check this by listing the packages installed in mayapy.
   
-3. Once your packages are installed, the next step is to install the source files into Maya. Navigate to the plug-ins folder of your Maya install (seperate from the above file path). On Windows, this can be: *C:\Path\To\Maya2020\bin\plug-ins*. Copy the GeometricEye folder and paste it into this plug-ins folder. Next, 
+3. Once your packages are installed, the next step is to install the source files into Maya. Navigate to the plug-ins folder of your Maya install (seperate from the above file path). On Windows, this can be: *C:\Path\To\Maya2020\bin\plug-ins*. Copy the GeometricEye folder and paste it into this plug-ins folder. Next, copy the "initModelGenDebug.py" file into the plug-ins folder. At this point, you should have both of these locations: *C:\Path\To\Maya2020\bin\plug-ins\initModelGenDebug.py* and *C:\Path\To\Maya2020\bin\plug-ins\GeometricEye*.
+
+4. Edit 
 
 
