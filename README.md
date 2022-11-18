@@ -17,6 +17,12 @@ This library developed for Autodesk Maya generates 3D ocular models using MRI da
   
 3. Once your packages are installed, the next step is to install the source files into Maya. Navigate to the plug-ins folder of your Maya install (seperate from the above file path). On Windows, this can be: *C:\Path\To\Maya2020\bin\plug-ins*. Copy the GeometricEye folder and paste it into this plug-ins folder. Next, copy the "initModelGenDebug.py" file into the plug-ins folder. At this point, you should have both of these locations: *C:\Path\To\Maya2020\bin\plug-ins\initModelGenDebug.py* and *C:\Path\To\Maya2020\bin\plug-ins\GeometricEye*.
 
-4. Edit 
+4. In your *initModelGenDebug.py* file, edit line 33 to be the FULL path to your GeometricEye folder. Make sure to replace all back-slashes (\) with forward slashes (/).
+
+5. The next step is to load the plug-in in Maya. In Maya, go to Windows -> Settings/Preferences -> Plug-in Manager. If you copied all files correctly, you should be able to search for "initModelGenDebug.py" in the search bar and see a result. Make sure to check both "load" and "auto-load" options for this. Once completed, you have successfuly installed the GeometricEye plug-in. Note: you may see some warnings or errors in the console log but that does not impact the application. 
+
+![image](https://user-images.githubusercontent.com/46249629/202595745-9d19138e-444a-40c4-baf7-8a1a045c8907.png)
+
+
 
 
